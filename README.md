@@ -1,11 +1,11 @@
 
-# Whatsapp Clone(UI)
+# whatsaap ui clone in flutter framework
+
 
 # Structure:
 
   - Chat List
   - Chat
- whatsaap ui clone in flutter framework
 
 # Dependencies!
 
