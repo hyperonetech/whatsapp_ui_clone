@@ -32,8 +32,8 @@
 
   </tr>
   <tr>
-    <td><img src="/Screenshot/3.png" width=340 height=550></td>
-  <td><img src="/Screenshot/4.png" width=340 height=550></td>
+    <td><img src="3.png" width=340 height=550></td>
+  <td><img src="4.png" width=340 height=550></td>
 
   </tr>
  </table>
