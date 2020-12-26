@@ -20,7 +20,7 @@
   </tr>
   <tr>
     <td><img src="/Screenshot/1.png" width=310 height=480></td>
-   <td><img src="/Screenshot/1.png" width=340 height=550></td>
+   <td><img src="/Screenshot/2.png" width=340 height=550></td>
 
  
 
