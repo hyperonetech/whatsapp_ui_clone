@@ -63,86 +63,88 @@ class _ChattingState extends State<Chatting> {
           ],
         ),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Message('send', "hello how are you,my name is khan and i am not terrorist!"),
-                Message('send', "hello how are you,my name is k "),
-                Message('receive', "hello how are you ?")
-              ],
+      body: SafeArea(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Message('send', "hello how are you,my name is khan and i am not terrorist!"),
+                  Message('send', "hello how are you,my name is k "),
+                  Message('receive', "hello how are you ?")
+                ],
+              ),
             ),
-          ),
-          Container(
-            padding: EdgeInsets.only(bottom: 12),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[
-                Container(
-                  padding: EdgeInsets.all(12),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
-                        Icons.tag_faces,
-                        color: Colors.grey,
-                        size: 26,
-                      ),
-                      SizedBox(
-                        width: 5,
-                      ),
-                      Container(
-                        width: MediaQuery.of(context).size.width - 199,
-                        height: 30,
-                        child: TextField(
-                          decoration: InputDecoration(
-                              border: InputBorder.none,
-                              hintText: 'Type a message',
-                              contentPadding: EdgeInsets.only(bottom: 13),
-                              hintStyle:
-                                  TextStyle(color: Colors.grey, fontSize: 18)),
+            Container(
+              padding: EdgeInsets.only(bottom: 12),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Container(
+                    padding: EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.tag_faces,
+                          color: Colors.grey,
+                          size: 26,
                         ),
-                      ),
-                      SizedBox(
-                        width: 5,
-                      ),
-                      Icon(
-                        Icons.attach_file,
-                        color: Colors.grey,
-                        size: 26,
-                      ),
-                      SizedBox(
-                        width: 5,
-                      ),
-                      Icon(
-                        Icons.camera_alt,
-                        color: Colors.grey,
-                        size: 26,
-                      )
-                    ],
+                        SizedBox(
+                          width: 5,
+                        ),
+                        Container(
+                          width: MediaQuery.of(context).size.width - 199,
+                          height: 30,
+                          child: TextField(
+                            decoration: InputDecoration(
+                                border: InputBorder.none,
+                                hintText: 'Type a message',
+                                contentPadding: EdgeInsets.only(bottom: 13),
+                                hintStyle:
+                                    TextStyle(color: Colors.grey, fontSize: 18)),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        Icon(
+                          Icons.attach_file,
+                          color: Colors.grey,
+                          size: 26,
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        Icon(
+                          Icons.camera_alt,
+                          color: Colors.grey,
+                          size: 26,
+                        )
+                      ],
+                    ),
                   ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(12),
-                  decoration: BoxDecoration(
-                      color: Color(0xFF128C7E), shape: BoxShape.circle),
-                  child: Icon(
-                    Icons.keyboard_voice,
-                    color: Colors.white,
-                    size: 32,
-                  ),
-                )
-              ],
-            ),
-          )
-        ],
+                  Container(
+                    padding: EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                        color: Color(0xFF128C7E), shape: BoxShape.circle),
+                    child: Icon(
+                      Icons.keyboard_voice,
+                      color: Colors.white,
+                      size: 32,
+                    ),
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

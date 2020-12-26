@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:whatsapp_ui_clone/Screen/Calls.dart';
+import 'package:whatsapp_ui_clone/Screen/Status.dart';
 import 'ChatList.dart';
 
 class Home extends StatefulWidget {
@@ -7,6 +10,14 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  TabController tabController;
+  @override
+  void initState() {
+    // TODO: implement initState
+
+    super.initState();
+  }
+  int tabindex=1;
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -15,8 +26,15 @@ class _HomeState extends State<Home> {
         appBar: AppBar(
           backgroundColor: Color(0xFF128C7E),
           bottom: TabBar(
+            onTap: (index){
+              print(index);
+              setState(() {
+                tabindex=index;
+              });
+            },
             indicatorColor: Colors.white,
             indicatorWeight: 4,
+            controller: tabController,
             labelStyle: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
             tabs: [
               Tab(child: Icon(Icons.camera_alt)),
@@ -48,14 +66,17 @@ class _HomeState extends State<Home> {
           children: [
             Icon(Icons.camera_alt,size: 100,color: Colors.black26,),
             ChatList(),
-            Icon(Icons.location_history_outlined,size: 100,color: Colors.black26,),
-            Icon(Icons.call,size: 100,color: Colors.black26,),
+            Status(),
+            Calls(),
           ],
         ),
-        floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.comment),
-          backgroundColor: Color(0xFF25D366),
-          onPressed: (){},
+        floatingActionButton: Container(
+          padding: EdgeInsets.only(bottom: 15),
+          child: tabindex==0?SizedBox(width: 0,):FloatingActionButton(
+            child: Icon(tabindex==1?Icons.comment:tabindex==2?Icons.camera_alt:Icons.call),
+            backgroundColor: Color(0xFF25D366),
+            onPressed: (){},
+          ),
         ),
       ),
     );
