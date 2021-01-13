@@ -65,7 +65,7 @@ App is currently extended with the following plugins. Instructions on how to use
 ### Development
 
 Want to contribute? Great!
-| Whatsapp | [htttps://wa.me/14582047711] | 
+| Whatsapp | [https://wa.me/14582047711] | 
 | Email | [hyperonetech@gmail.com] | 
  
 
