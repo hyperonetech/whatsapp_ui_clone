@@ -45,7 +45,7 @@ Install the dependencies and devDependencies and run app.
 
 ```sh
 $ git  clone https://github.com/hyperonetech/whatsapp_ui_clone.git
-$ cd whtasapp_ui_clone_git
+$ cd whtasapp_ui_clone
 $ flutter pub get
 $ flutter run
 ```
