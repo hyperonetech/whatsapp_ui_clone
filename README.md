@@ -2,38 +2,53 @@
 # whatsaap ui clone in flutter framework
 
 
-# Structure:
+  - chat list
+  - chat
+  - status
 
-  - Chat List
-  - Chat
+# New Features!
 
-# Dependencies!
+  - status screen with story view and indicators
+  - call
 
-  - 
 
-  #### Flutter App Screenshots
+### Installation
 
-<table>
-  <tr>
-    <td>Chat List</td>
+ requires [Flutter](https://flutter.dev/)  to run.
 
-  </tr>
-  <tr>
-    <td><img src="/Screenshot/1.png" width=310 height=480></td>
-   <td><img src="/Screenshot/2.png" width=340 height=550></td>
+Install the dependencies and devDependencies and start the server.
 
+```sh
+$ git  clone https://github.com/hyperonetech/whatsapp_ui_clone.git
+$ cd whtasapp_ui_clone_git
+$ flutter pub get
+$ flutter run
+```
+
+
+### Plugins
+
+App is currently extended with the following plugins. Instructions on how to use them in your own application are linked below.
+
+| Plugin | README |
+| ------ | ------ |
+| Story View | [https://pub.dev/packages/story_view] |
+| Cached Network image | [https://pub.dev/packages/cached_network_image] |
+| fl_chart | [https://pub.dev/packages/fl_chart] | 
+
+
+### Development
+
+Want to contribute? Great!
+| Whatsapp | [wa.me/14582047711] | 
+| Email | [hyperonetech@gmail.com] | 
  
 
-  </tr>
- </table>
- <table>
-  <tr>
-    <td>Status & Call</td>
+License
+----
 
-  </tr>
-  <tr>
-    <td><img src="3.png" width=340 height=550></td>
-  <td><img src="4.png" width=340 height=550></td>
+MIT
 
-  </tr>
- </table>
+
+**Free Software, Hell Yeah!**
+ 
