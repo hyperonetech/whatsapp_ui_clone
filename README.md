@@ -11,12 +11,37 @@
   - status screen with story view and indicators
   - call
 
+# Scrrenshot
+<table>
+  <tr>
+    <td>Chat List</td>
+
+  </tr>
+  <tr>
+    <td><img src="/Screenshot/1.png" width=310 height=480></td>
+   <td><img src="/Screenshot/2.png" width=340 height=550></td>
+
+ 
+
+  </tr>
+ </table>
+ <table>
+  <tr>
+    <td>Status & Call</td>
+
+  </tr>
+  <tr>
+    <td><img src="3.png" width=340 height=550></td>
+  <td><img src="4.png" width=340 height=550></td>
+
+  </tr>
+ </table>
 
 ### Installation
 
  requires [Flutter](https://flutter.dev/)  to run.
 
-Install the dependencies and devDependencies and start the server.
+Install the dependencies and devDependencies and run app.
 
 ```sh
 $ git  clone https://github.com/hyperonetech/whatsapp_ui_clone.git
